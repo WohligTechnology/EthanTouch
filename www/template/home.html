@@ -1,0 +1,30 @@
+<ion-view class="gradient-bg">
+
+  <div class="stars"></div>
+  <div class="logo">
+    <img src="img/logo.png" title="Wohlig Technology" alt="Wohlig Technology">
+    <img src="img/planet/earth.png" alt="Wohlig Technology" title="Wohlig Technology" class="earth rotate10">
+  </div>
+
+  <div class="astro">
+    <img src="img/component/astro.png" title="You've got to learn to let go." alt="You've got to learn to let go.">
+  </div>
+
+  <ion-content class="has-matt">
+    <ul class="chat-matt">
+      <li class="matt-says">
+        <p>
+         <span typed-js></span>
+         </p>
+         <img src="img/component/comet.png" class="cometyes" width="110">
+      </li>
+
+      <li class="we-say" ng-repeat="message in messages" ng-bind-html="message.content"></li>
+
+    </ul>
+  </ion-content>
+  <ion-footer-bar>
+    <button class="button button-clear button-positive" ng-click="add();">Add Message</button>
+  </ion-footer-bar>
+</ion-view>
+
